@@ -1,9 +1,5 @@
 ---
 # tasks file for apache
-- name: Ensure NTP is set up
-  ntp_server:
-  - "{{ default('time.google.com') }}"
-
 - name: Ensure httpd packages are present
   yum:
     name: "{{ item }}"

@@ -5,3 +5,9 @@
 
   roles:
     - apache-simple
+
+- name: Set up NTP
+  hosts: all
+  become: yes
+  roles:
+    - arillso.ntp
