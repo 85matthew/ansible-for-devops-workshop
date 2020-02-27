@@ -4,5 +4,5 @@
   become: yes
 
   roles:
-    #- geerlingguy.ntp
-    - jtyr.motd
+    - geerlingguy.ntp
+    # - jtyr.motd
